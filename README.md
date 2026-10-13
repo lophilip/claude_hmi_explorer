@@ -1,4 +1,6 @@
 # Substation HMI
+This was a test of claude, to see what it could do. It's not perfect, and it does
+crash, but perhaps it's a good starting place for a project.
 
 A small Python/Qt HMI for drawing and operating substation single line diagrams,
 backed by a real DNP3 outstation (OpenDNP3 via `dnp3-python`) whose database is
