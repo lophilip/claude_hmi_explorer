@@ -1,0 +1,760 @@
+{
+  "version": 1,
+  "dnp3": {
+    "port": 20000,
+    "local_addr": 1,
+    "remote_addr": 2
+  },
+  "points": [
+    {
+      "name": "DS1_POS",
+      "type": "BI",
+      "index": 0,
+      "description": "Line 1 disconnector position",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB1_POS",
+      "type": "BI",
+      "index": 1,
+      "description": "Line 1 breaker position",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB2_POS",
+      "type": "BI",
+      "index": 2,
+      "description": "T1 HV breaker position",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB3_POS",
+      "type": "BI",
+      "index": 3,
+      "description": "T1 LV breaker position",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB4_POS",
+      "type": "BI",
+      "index": 4,
+      "description": "Feeder 1 breaker position",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB5_POS",
+      "type": "BI",
+      "index": 5,
+      "description": "Feeder 2 breaker position",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "L1_LIVE",
+      "type": "BI",
+      "index": 6,
+      "description": "Line 1 voltage present",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "PROT_HEALTHY",
+      "type": "BI",
+      "index": 7,
+      "description": "Protection relay healthy",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "BATT_ALARM",
+      "type": "BI",
+      "index": 8,
+      "description": "Battery charger alarm",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "AR_STATUS",
+      "type": "BI",
+      "index": 9,
+      "description": "Feeder auto-reclose in service",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "DS1_CTRL",
+      "type": "BO",
+      "index": 0,
+      "description": "Line 1 disconnector control",
+      "units": "",
+      "event_class": 1,
+      "control_model": "OpenClose",
+      "feedback": "DS1_POS",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB1_CTRL",
+      "type": "BO",
+      "index": 1,
+      "description": "Line 1 breaker control",
+      "units": "",
+      "event_class": 1,
+      "control_model": "TripClose",
+      "feedback": "CB1_POS",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB2_CTRL",
+      "type": "BO",
+      "index": 2,
+      "description": "T1 HV breaker control",
+      "units": "",
+      "event_class": 1,
+      "control_model": "TripClose",
+      "feedback": "CB2_POS",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB3_CTRL",
+      "type": "BO",
+      "index": 3,
+      "description": "T1 LV breaker control",
+      "units": "",
+      "event_class": 1,
+      "control_model": "TripClose",
+      "feedback": "CB3_POS",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB4_CTRL",
+      "type": "BO",
+      "index": 4,
+      "description": "Feeder 1 breaker control",
+      "units": "",
+      "event_class": 1,
+      "control_model": "TripClose",
+      "feedback": "CB4_POS",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CB5_CTRL",
+      "type": "BO",
+      "index": 5,
+      "description": "Feeder 2 breaker control",
+      "units": "",
+      "event_class": 1,
+      "control_model": "TripClose",
+      "feedback": "CB5_POS",
+      "value": 0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "AR_CTRL",
+      "type": "BO",
+      "index": 6,
+      "description": "Feeder auto-reclose on/off",
+      "units": "",
+      "event_class": 1,
+      "control_model": "OnOff",
+      "feedback": "AR_STATUS",
+      "value": 1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "L1_MW",
+      "type": "AI",
+      "index": 0,
+      "description": "Line 1 active power",
+      "units": "MW",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 48.6,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "L1_KV",
+      "type": "AI",
+      "index": 1,
+      "description": "Line 1 voltage",
+      "units": "kV",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 132.4,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "T1_MW",
+      "type": "AI",
+      "index": 2,
+      "description": "T1 active power",
+      "units": "MW",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 31.2,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "T1_OIL_TEMP",
+      "type": "AI",
+      "index": 3,
+      "description": "T1 top oil temperature",
+      "units": "°C",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 61.5,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "T1_TAP_POS",
+      "type": "AI",
+      "index": 4,
+      "description": "T1 tap position",
+      "units": "",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 9,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "BUS33_KV",
+      "type": "AI",
+      "index": 5,
+      "description": "33 kV bus voltage",
+      "units": "kV",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 33.1,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "F1_AMPS",
+      "type": "AI",
+      "index": 6,
+      "description": "Feeder 1 current",
+      "units": "A",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 312,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "F2_AMPS",
+      "type": "AI",
+      "index": 7,
+      "description": "Feeder 2 current",
+      "units": "A",
+      "event_class": 2,
+      "control_model": "",
+      "feedback": "",
+      "value": 0,
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "T1_TAP_SP",
+      "type": "AO",
+      "index": 0,
+      "description": "T1 tap position setpoint",
+      "units": "",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "T1_TAP_POS",
+      "value": 9,
+      "min": 1,
+      "max": 17
+    },
+    {
+      "name": "AVR_SETPOINT",
+      "type": "AO",
+      "index": 1,
+      "description": "33 kV voltage regulator setpoint",
+      "units": "kV",
+      "event_class": 1,
+      "control_model": "",
+      "feedback": "",
+      "value": 33,
+      "min": 31,
+      "max": 35
+    }
+  ],
+  "elements": [
+    {
+      "kind": "text",
+      "x": 40,
+      "y": 10,
+      "props": {
+        "label": "RIVERSIDE 132/33 kV SUBSTATION",
+        "size": 14
+      }
+    },
+    {
+      "kind": "line",
+      "x": 200,
+      "y": 60,
+      "props": {
+        "label": "Line 1",
+        "status": "L1_LIVE",
+        "color": "#C76BE0",
+        "width": 3,
+        "dx": 0,
+        "dy": 60
+      }
+    },
+    {
+      "kind": "switch",
+      "x": 200,
+      "y": 150,
+      "props": {
+        "label": "DS1",
+        "status": "DS1_POS",
+        "control": "DS1_CTRL"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 200,
+      "y": 180,
+      "props": {
+        "label": "",
+        "status": "L1_LIVE",
+        "color": "#C76BE0",
+        "width": 3,
+        "dx": 0,
+        "dy": 40
+      }
+    },
+    {
+      "kind": "breaker",
+      "x": 200,
+      "y": 250,
+      "props": {
+        "label": "CB1",
+        "status": "CB1_POS",
+        "control": "CB1_CTRL"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 200,
+      "y": 280,
+      "props": {
+        "label": "",
+        "status": "CB1_POS",
+        "color": "#C76BE0",
+        "width": 3,
+        "dx": 0,
+        "dy": 40
+      }
+    },
+    {
+      "kind": "busbar",
+      "x": 120,
+      "y": 320,
+      "props": {
+        "label": "",
+        "status": "",
+        "color": "#C76BE0",
+        "width": 7,
+        "dx": 480,
+        "dy": 0
+      }
+    },
+    {
+      "kind": "text",
+      "x": 610,
+      "y": 310,
+      "props": {
+        "label": "132 kV BUS",
+        "size": 10
+      }
+    },
+    {
+      "kind": "line",
+      "x": 440,
+      "y": 320,
+      "props": {
+        "label": "",
+        "status": "",
+        "color": "#C76BE0",
+        "width": 3,
+        "dx": 0,
+        "dy": 30
+      }
+    },
+    {
+      "kind": "breaker",
+      "x": 440,
+      "y": 380,
+      "props": {
+        "label": "CB2",
+        "status": "CB2_POS",
+        "control": "CB2_CTRL"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 440,
+      "y": 410,
+      "props": {
+        "label": "",
+        "status": "CB2_POS",
+        "color": "#C76BE0",
+        "width": 3,
+        "dx": 0,
+        "dy": 30
+      }
+    },
+    {
+      "kind": "transformer",
+      "x": 440,
+      "y": 480,
+      "props": {
+        "label": "T1 132/33 kV",
+        "hv_color": "#C76BE0",
+        "lv_color": "#F2D544"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 440,
+      "y": 520,
+      "props": {
+        "label": "",
+        "status": "CB2_POS",
+        "color": "#F2D544",
+        "width": 3,
+        "dx": 0,
+        "dy": 30
+      }
+    },
+    {
+      "kind": "breaker",
+      "x": 440,
+      "y": 580,
+      "props": {
+        "label": "CB3",
+        "status": "CB3_POS",
+        "control": "CB3_CTRL"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 440,
+      "y": 610,
+      "props": {
+        "label": "",
+        "status": "CB3_POS",
+        "color": "#F2D544",
+        "width": 3,
+        "dx": 0,
+        "dy": 40
+      }
+    },
+    {
+      "kind": "busbar",
+      "x": 300,
+      "y": 650,
+      "props": {
+        "label": "",
+        "status": "",
+        "color": "#F2D544",
+        "width": 7,
+        "dx": 440,
+        "dy": 0
+      }
+    },
+    {
+      "kind": "text",
+      "x": 750,
+      "y": 640,
+      "props": {
+        "label": "33 kV BUS",
+        "size": 10
+      }
+    },
+    {
+      "kind": "line",
+      "x": 360,
+      "y": 650,
+      "props": {
+        "label": "",
+        "status": "",
+        "color": "#F2D544",
+        "width": 3,
+        "dx": 0,
+        "dy": 40
+      }
+    },
+    {
+      "kind": "breaker",
+      "x": 360,
+      "y": 720,
+      "props": {
+        "label": "CB4",
+        "status": "CB4_POS",
+        "control": "CB4_CTRL"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 360,
+      "y": 750,
+      "props": {
+        "label": "Feeder 1",
+        "status": "CB4_POS",
+        "color": "#F2D544",
+        "width": 3,
+        "dx": 0,
+        "dy": 70
+      }
+    },
+    {
+      "kind": "line",
+      "x": 600,
+      "y": 650,
+      "props": {
+        "label": "",
+        "status": "",
+        "color": "#F2D544",
+        "width": 3,
+        "dx": 0,
+        "dy": 40
+      }
+    },
+    {
+      "kind": "breaker",
+      "x": 600,
+      "y": 720,
+      "props": {
+        "label": "CB5",
+        "status": "CB5_POS",
+        "control": "CB5_CTRL"
+      }
+    },
+    {
+      "kind": "line",
+      "x": 600,
+      "y": 750,
+      "props": {
+        "label": "Feeder 2",
+        "status": "CB5_POS",
+        "color": "#F2D544",
+        "width": 3,
+        "dx": 0,
+        "dy": 70
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 30,
+      "y": 120,
+      "props": {
+        "label": "Line 1 power",
+        "value": "L1_MW"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 30,
+      "y": 170,
+      "props": {
+        "label": "Line 1 voltage",
+        "value": "L1_KV"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 650,
+      "y": 420,
+      "props": {
+        "label": "T1 power",
+        "value": "T1_MW"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 650,
+      "y": 470,
+      "props": {
+        "label": "T1 oil temp",
+        "value": "T1_OIL_TEMP"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 650,
+      "y": 520,
+      "props": {
+        "label": "T1 tap position",
+        "value": "T1_TAP_POS"
+      }
+    },
+    {
+      "kind": "setpoint",
+      "x": 650,
+      "y": 570,
+      "props": {
+        "label": "T1 tap setpoint",
+        "control": "T1_TAP_SP"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 750,
+      "y": 675,
+      "props": {
+        "label": "33 kV bus",
+        "value": "BUS33_KV"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 190,
+      "y": 780,
+      "props": {
+        "label": "Feeder 1 current",
+        "value": "F1_AMPS"
+      }
+    },
+    {
+      "kind": "analog",
+      "x": 430,
+      "y": 780,
+      "props": {
+        "label": "Feeder 2 current",
+        "value": "F2_AMPS"
+      }
+    },
+    {
+      "kind": "text",
+      "x": 40,
+      "y": 380,
+      "props": {
+        "label": "STATION",
+        "size": 10
+      }
+    },
+    {
+      "kind": "status",
+      "x": 50,
+      "y": 425,
+      "props": {
+        "label": "Protection healthy",
+        "status": "PROT_HEALTHY",
+        "on_color": "#2FB463",
+        "off_color": "#3A444E"
+      }
+    },
+    {
+      "kind": "status",
+      "x": 50,
+      "y": 465,
+      "props": {
+        "label": "Battery charger alarm",
+        "status": "BATT_ALARM",
+        "on_color": "#E8A33D",
+        "off_color": "#3A444E"
+      }
+    },
+    {
+      "kind": "control",
+      "x": 40,
+      "y": 500,
+      "props": {
+        "label": "Feeder auto-reclose",
+        "control": "AR_CTRL",
+        "status": "AR_STATUS"
+      }
+    },
+    {
+      "kind": "setpoint",
+      "x": 40,
+      "y": 555,
+      "props": {
+        "label": "AVR setpoint",
+        "control": "AVR_SETPOINT"
+      }
+    }
+  ]
+}
