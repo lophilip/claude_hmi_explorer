@@ -6,6 +6,11 @@ A small Python/Qt HMI for drawing and operating substation single line diagrams,
 backed by a real DNP3 outstation (OpenDNP3 via `dnp3-python`) whose database is
 built from a configurable points list.
 
+> **Disclaimer:** This is a prototype generated with AI as an experiment and a
+> learning tool. It has not been tested or certified for real-world use. Do not
+> connect it to a live substation, production SCADA system or any critical
+> infrastructure. Use it in a lab or test environment only.
+
 ## Run
 
 ```bash
